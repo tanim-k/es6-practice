@@ -168,3 +168,8 @@ console.log(density);
 // const karimName = products2.karim.name;
 const {name} = products2.karim;
 console.log(color1, type, density, name);
+
+// practicing default parameter
+const add3 = (num1, num2, num3 = 7) => num1+num2+num3;
+const add3Result = add3(12, 1);
+console.log(add3Result);

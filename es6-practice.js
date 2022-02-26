@@ -53,8 +53,8 @@ const division = (num1, num2) => num1/ num2;
 const div = division(40,2);
 console.log(div);
 // arrow-3: only one parameter
-const name = last => 'fan ' + last;
-const muName = name('khan');
+const name1 = last => 'fan ' + last;
+const muName = name1('khan');
 console.log(muName);
 // arrow - 4 :
 const frndName = () => 'aditi' + ' ' + 'narayon'
@@ -118,13 +118,53 @@ const products1 =
     // {id:3, name:'laptop', price:3223121, color:'red'},
     // {id:7, name:'board', price:120, color:'white'}
 // creating variables
-const color = products1.color
+const color1 = products1.color
 const id = products1.id
 const price = products1.price
-console.log(color);
+console.log(color1);
 console.log(id);
 console.log(price);
 
 // ex 
 const {sky, soil, colors} = {sky:'blue', soil:'matti', colors: 'red'}
 console.log(sky, soil, colors);
+
+// destructuring complex
+const products2 = {
+    rahim:{
+        id:1, 
+        name:'chair',
+        price:1234, 
+        color:'sky'
+    },
+    karim:{
+        id:2, 
+        name:'table', 
+        price:12345, 
+        color:'blue'
+    },
+    matin:{
+        id:3, 
+        name:'laptop', 
+        price:3223121, 
+        color:{
+            id: '#ior5eriwo',
+            thickness: 4 ,
+            density: 'low',
+            type: 'pro',
+        },
+    },
+}
+// bangla or ogochalo system 
+// const color1 = products2.rahim.color;
+const {color} = products2.rahim;
+console.log(color);
+// const color2 = products2.matin.color.type;
+const {type} = products2.matin.color;
+console.log('matin color:', type);
+// const density = products2.matin.color.density;
+const {density} = products2.matin.color
+console.log(density);
+// const karimName = products2.karim.name;
+const {name} = products2.karim;
+console.log(color1, type, density, name);

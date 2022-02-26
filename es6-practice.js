@@ -87,3 +87,25 @@ console.log(dutyDone);
 // using filters to get odd numbers 
 const oddNums = numbers.filter(p => p%2 == 1);
 console.log(oddNums);
+
+// using find to get price of a product
+const products = [
+    {id:1, name:'chair', price:1234, color:'sky'},
+    {id:2, name:'table', price:12345, color:'blue'},
+    {id:3, name:'laptop', price:3223121, color:'red'},
+    {id:4, name:'phone', price:12349, color:'skyblue'},
+    {id:5, name:'rack', price:12, color:'green'},
+    {id:5, name:'charger', price:123, color:'cyan'},
+    {id:7, name:'board', price:120, color:'white'}
+]
+const target = products.find(product => product.price == 3223121);
+console.log(target);
+
+// 2 para meter  fn declaration 
+const add2 = (o, p) => o+2 * p+2;
+const addRslt = add2(13, 3);
+console.log(addRslt);
+// 2nd part 
+const mul2 = () => addRslt*addRslt;
+const mulRslt = mul2();
+console.log(mulRslt);

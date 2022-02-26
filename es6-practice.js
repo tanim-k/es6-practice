@@ -173,3 +173,4 @@ console.log(color1, type, density, name);
 const add3 = (num1, num2, num3 = 7) => num1+num2+num3;
 const add3Result = add3(12, 1);
 console.log(add3Result);
+// de 

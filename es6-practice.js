@@ -117,7 +117,7 @@ const products1 =
     // {id:2, name:'table', price:12345, color:'blue'},
     // {id:3, name:'laptop', price:3223121, color:'red'},
     // {id:7, name:'board', price:120, color:'white'}
-
+// creating variables
 const color = products1.color
 const id = products1.id
 const price = products1.price

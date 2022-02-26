@@ -78,3 +78,12 @@ const result = another(10, 20)
 const squareRslt = (r) => r*r;
 const last = squareRslt(result); 
 console.log(last);
+
+// map using ::: to make a new array
+const numbers = [2, 3, 5, 21, 6, 67];
+const dutyDone = numbers.map(x => x*5);
+console.log(dutyDone);
+
+// using filters to get odd numbers 
+const oddNums = numbers.filter(p => p%2 == 1);
+console.log(oddNums);

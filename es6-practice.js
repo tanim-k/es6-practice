@@ -72,6 +72,7 @@ const multilineArrow = (x, y) => {
 }
 const multipleRslt = multilineArrow(2, 4);
 console.log(multipleRslt);
+
 // another arrow 
 const another = (p, q) => p+q;
 const result = another(10, 20)
@@ -109,3 +110,21 @@ console.log(addRslt);
 const mul2 = () => addRslt*addRslt;
 const mulRslt = mul2();
 console.log(mulRslt);
+
+// use destructuring to create a variable of any property of an object :8:::
+const products1 = 
+    {id:1, name:'chair', price:1234, color:'sky'};
+    // {id:2, name:'table', price:12345, color:'blue'},
+    // {id:3, name:'laptop', price:3223121, color:'red'},
+    // {id:7, name:'board', price:120, color:'white'}
+
+const color = products1.color
+const id = products1.id
+const price = products1.price
+console.log(color);
+console.log(id);
+console.log(price);
+
+// ex 
+const {sky, soil, colors} = {sky:'blue', soil:'matti', colors: 'red'}
+console.log(sky, soil, colors);
